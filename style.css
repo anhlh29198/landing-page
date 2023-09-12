@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav, .intro, footer {
+    background-color: #1F2937;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 100px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    gap: 30px;
+}
+
+.intro .left {
+    flex: 1;
+}
+
+.intro img {
+    flex: 1;
+    border: 10px solid green;
+    width: clamp(100px, 50%, 300px);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+a, .left p {
+    font-size: 18px;
+    color:#E5E7EB;
+}
+
+nav p {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+button, .noti {
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1F2937;
+    text-align: center;
+}
+
+.the-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px;
+}
+
+.a-feature img, button {
+    border: 2px solid #3882F6;
+    border-radius: 10%;
+}
+
+.a-feature img {
+    width: 100px;
+    height: auto;
+}
+
+.quote {
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.quote-text > .text {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    font-weight: bold;
+    text-align: end;
+    color: #1F2937;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+#button {
+    border: 2px solid #E5E7EB;
+    flex-shrink: 0;
+    padding: 10px;
+}
+
+.noti {
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+    border-radius: 2%;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#call {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB;
+}

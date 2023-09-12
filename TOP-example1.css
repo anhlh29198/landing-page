@@ -1,0 +1,187 @@
+
+body {
+    font-family: roboto, -apple-system, BlinkMacSystemFont,'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+}
+
+/* General rules for all items, except the footer */
+
+
+
+/*Stylings shaded by the header and hero*/
+
+.header, .top-hero {
+    background-color: #1f2937;
+    color: #F9FAF8;
+}
+
+/* Header specific stylings */
+
+.header {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+padding-bottom: 20px;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-links {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    color: #E5E7EB;
+    list-style-type: none;
+    
+}
+
+/* Content below the header */
+
+.main-content {
+display: flex;
+flex-direction: column;
+}
+
+/* Hero style element - contains nested elements .introduction, .main-image and .button-1  */
+
+.top-hero {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 20px 0px 40px 90px;
+}
+
+.introduction, .main-image {
+    width: 430px;
+    height: 300px;
+}
+
+.introduction {
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+width: 270px;
+}
+
+.main-image {
+    height: auto;
+    padding-top: 25px;
+}
+
+.button-1 {
+    width: max-content;
+    padding: 7px 15px;
+    border-radius: 4px;
+    background-color: #3882f6;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+}
+
+/* Section containing 4 images in a row with some explanatory text below them. 
+
+.information-images is merely for the heading and is probably redundant. 
+The next container .image-container has the images and texts nested as 4 instances of .image-text.  
+The images have been given rounded corners with .rounded-images tha has been applied to images. */
+
+.information-images {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.image-container {
+display: flex;
+flex-direction: row;
+margin: 40px 60px 40px 60px;
+justify-content: space-evenly;
+}
+
+.image-text {
+    text-align: center;
+    width: 170px;
+    color: #5e5e5e;
+    font-size: medium;
+}
+
+.rounded-images {
+    border-radius: 4px;
+}
+
+/* This section consists of the testimonial main text. 
+Contains a nested blockquote and a seperate container for the author. */
+
+.testimonial {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+
+.testimonial-content {
+    width: 500px;
+}
+
+blockquote {
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    width: 15em;
+}
+
+.testimonial-author {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: end;
+}
+
+/* This section has the call to action. It has a div with text and a button. 
+The text section inherits all styling from the main container but the button has it's own.*/
+
+.call-to-action {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    background-color: #3882f6;
+    color: white;
+}
+
+.button2 {
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    margin: 30px;
+    border: 1px solid #F9FAF8; 
+    border-radius: 4px;
+}
+
+
+/*The footer is a floating one*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    font-size: small;
+    padding: 15px;
+    flex-shrink: 0;
+    text-align: center;
+}
